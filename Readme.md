@@ -7,11 +7,11 @@ Create a namespace for this group of resources.
 
 Execute the following commands in order to create the Kubernetes Secrets, ConfigMaps, Deployments and Services for Mongodb and  MongoExpress
 
-* `kubectl apply -n database mongodb-secrets.yaml`
-* `kubectl apply -n database mongodb-configmap.yaml`
-* `kubectl apply -n database mongodb-deployment.yaml`
-* `kubectl apply -n database mongodb-service.yaml`
-* `kubectl apply -n database mongo--express-deployment.yaml` (includes service configuration)
+* `kubectl apply -n database -f mongodb-secrets.yaml`
+* `kubectl apply -n database -f mongodb-configmap.yaml`
+* `kubectl apply -n database -f mongodb-deployment.yaml`
+* `kubectl apply -n database -f mongodb-service.yaml`
+* `kubectl apply -n database -f mongo--express-deployment.yaml` (includes service configuration)
 
 Once all the above got successfull created service can be exposed outside with following commands
 
